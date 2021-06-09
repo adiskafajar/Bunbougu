@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../../css/style.css">
+   <title>Profile</title>
+</head>
+<body class="relative">
+   <nav class="absolute inset-x-0 px-40 shadow-lg">
+      <div class="flex items-center container mx-auto h-16">
+         <div class="mr-6 text-2xl font-bold">Bunbougu</div>
+         <div class="mr-6 text-base font-semibold">Home</div>
+         <div class="mr-6 text-base font-semibold">About</div>
+         <div class="mr-auto text-base font-semibold">Catalog</div>
+         <div class="mr-6">
+            <form class="relative focus-within:text-gray-500" action="">
+               <button class="absolute top-0 bottom-0 left-2" type="submit">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="#C4C4C4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                     <path d="M21.0004 20.9999L16.6504 16.6499" stroke="#C4C4C4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>                  
+               </button>
+               <input id="search-input" class="py-1 pl-9 border rounded-lg bg-gray-auth focus:outline-none focus:ring focus:ring-gray-300 " type="text" placeholder="Search">
+            </form>
+         </div>
+         <div class="mr-6">
+            <a href="">
+               <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0)">
+                  <path d="M8.62435 21.0832C9.15362 21.0832 9.58268 20.6541 9.58268 20.1248C9.58268 19.5956 9.15362 19.1665 8.62435 19.1665C8.09508 19.1665 7.66602 19.5956 7.66602 20.1248C7.66602 20.6541 8.09508 21.0832 8.62435 21.0832Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M19.1673 21.0832C19.6966 21.0832 20.1257 20.6541 20.1257 20.1248C20.1257 19.5956 19.6966 19.1665 19.1673 19.1665C18.638 19.1665 18.209 19.5956 18.209 20.1248C18.209 20.6541 18.638 21.0832 19.1673 21.0832Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M0.958984 0.958496H4.79232L7.36065 13.7906C7.44828 14.2318 7.68831 14.6281 8.03871 14.9102C8.38912 15.1923 8.82757 15.3421 9.27732 15.3335H18.5923C19.0421 15.3421 19.4805 15.1923 19.8309 14.9102C20.1813 14.6281 20.4213 14.2318 20.509 13.7906L22.0423 5.75016H5.75065" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0">
+                  <rect width="23" height="23" fill="white"/>
+                  </clipPath>
+                  </defs>
+               </svg>           
+            </a>
+         </div>
+         <div class="mr-6">
+            <a href="">
+               <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M18.3327 19.25V17.4167C18.3327 16.4442 17.9464 15.5116 17.2587 14.8239C16.5711 14.1363 15.6385 13.75 14.666 13.75H7.33268C6.36022 13.75 5.42759 14.1363 4.73996 14.8239C4.05232 15.5116 3.66602 16.4442 3.66602 17.4167V19.25" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M11.0007 10.0833C13.0257 10.0833 14.6673 8.44171 14.6673 6.41667C14.6673 4.39162 13.0257 2.75 11.0007 2.75C8.97561 2.75 7.33398 4.39162 7.33398 6.41667C7.33398 8.44171 8.97561 10.0833 11.0007 10.0833Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+               </svg>           
+            </a>
+         </div>
+         <div>
+            <a class="font-semibold text-lg" href="">Logout</a>
+         </div>
+      </div>
+   </nav>
+
+   <main class="flex flex-col container mx-auto px-40">
+      <div class="text-lg font-semibold mt-25">My Porfile</div>
+
+      <div class="flex mt-7 items-center">
+         <div class="flex-none h-30 w-30 rounded-full shadow-xl overflow-hidden"><img class="h-full w-full" src="img/user/604652883899e.jpg" alt=""></div>
+         <div class="flex-grow p-5 mr-auto ">
+            <div class="font-semibold text-xl">Bambang</div>
+            <div class="">male</div>
+            <div class="underline">Bambang@gmail.com</div>
+            <div class="">jl.jalan2</div>
+            <div class="">08383821348</div>
+         </div>
+         <div class="flex-none flex m-auto">Edit Account</div>
+      </div>
+
+      <div class=" mt-9 border-b-4"></div>
+
+      <div class="flex justify-center mt-9 text-gray-400">
+         <a href="" class="flex flex-col justify-center items-center mx-10 w-45 h-35 border-2 border-gray-300 hover:border-transparent hover:bg-gray-100 hover:shadow-lg">
+            <div class="">
+               <svg width="43" height="39" viewBox="0 0 43 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M28.9863 3.07861L28.9915 3.07711C33.9301 1.6362 37.9671 4.14764 39.2842 6.85073L41.0821 5.97466L39.285 6.85224C41.3005 10.9798 40.6433 15.8319 36.4487 21.601L36.4451 21.606C33.1706 26.1389 28.4486 30.7276 21.5055 36.1553C14.557 30.719 9.84041 26.0902 6.56035 21.5988C2.35396 15.8304 1.69748 10.9791 3.71265 6.85224L3.71339 6.85073C5.0269 4.15509 9.0491 1.65705 14.0133 3.07917C16.3788 3.76294 18.4427 5.22852 19.8678 7.23662L21.4988 9.53477L23.1298 7.23662C24.5553 5.22796 26.62 3.76213 28.9863 3.07861Z" stroke="#C4C4C4" stroke-width="4"/>
+               </svg>
+            </div>
+            <div class="">Wishlist</div>
+         </a>
+
+         <a href="" class="flex flex-col justify-center items-center mx-10 w-45 h-35 border-2 border-gray-300 hover:border-transparent hover:bg-gray-100 hover:shadow-lg">
+            <div class="">
+               <svg width="47" height="46" viewBox="0 0 47 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17.6243 43.0832C18.7059 43.0832 19.5827 42.2064 19.5827 41.1248C19.5827 40.0433 18.7059 39.1665 17.6243 39.1665C16.5428 39.1665 15.666 40.0433 15.666 41.1248C15.666 42.2064 16.5428 43.0832 17.6243 43.0832Z" stroke="#C4C4C4" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M39.1673 43.0832C40.2489 43.0832 41.1257 42.2064 41.1257 41.1248C41.1257 40.0433 40.2489 39.1665 39.1673 39.1665C38.0858 39.1665 37.209 40.0433 37.209 41.1248C37.209 42.2064 38.0858 43.0832 39.1673 43.0832Z" stroke="#C4C4C4" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M1.95898 1.9585H9.79232L15.0406 28.1806C15.2197 29.0822 15.7102 29.8921 16.4263 30.4685C17.1423 31.0449 18.0383 31.3511 18.9573 31.3335H37.9923C38.9114 31.3511 39.8073 31.0449 40.5234 30.4685C41.2394 29.8921 41.7299 29.0822 41.909 28.1806L45.0423 11.7502H11.7506" stroke="#C4C4C4" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+               </svg>               
+            </div>
+            <div class="mt-1">Cart</div>
+         </a>
+         
+         <a href="" class="flex flex-col justify-center items-center  mx-10 w-45 h-35 border-2 border-gray-300 hover:border-transparent hover:bg-gray-100 hover:shadow-lg">
+            <div class="">
+               <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M25.9993 8.66675V2.16675L17.3327 10.8334L25.9993 19.5001V13.0001C33.171 13.0001 38.9993 18.8284 38.9993 26.0001C38.9993 28.1884 38.4577 30.2684 37.4827 32.0667L40.646 35.2301C42.4016 32.4717 43.3336 29.2697 43.3327 26.0001C43.3327 16.4234 35.576 8.66675 25.9993 8.66675ZM25.9993 39.0001C18.8277 39.0001 12.9993 33.1717 12.9993 26.0001C12.9993 23.8117 13.541 21.7317 14.516 19.9334L11.3527 16.7701C9.59715 19.5284 8.66511 22.7305 8.66602 26.0001C8.66602 35.5767 16.4227 43.3334 25.9993 43.3334V49.8334L34.666 41.1667L25.9993 32.5001V39.0001Z" fill="#C4C4C4"/>
+               </svg>                  
+            </div>
+            <div class="mt-1">Transaction</div>
+         </a>
+      </div>
+   </main>
+
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+Options -Multiviews
+
+RewriteEngine On 
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+
+# Rewrite for index.php to load views only main
+RewriteRule ^~~\[([0-9a-zA-Z-\ +=_]+)\]$ index.php?main=$1 [L]
+
+# Rewrite for index.php to load views only page+subPage
+RewriteRule ^~~\[([0-9a-zA-Z-\ +=_]+)\]~~\[([0-9a-zA-Z-\ +=_]+)\]$ index.php?main=$1&page=$2 [L]
+
+# rewrite for index.php to load views only page+subPage+name
+RewriteRule ^~~\[([0-9a-zA-Z-\ +=_]+)\]~~\[([0-9a-zA-Z-\ +=_]+)\]~~\[([0-9a-zA-Z-\ +=_]+)\]$ index.php?main=$1&page=$2&name=$3 [L]

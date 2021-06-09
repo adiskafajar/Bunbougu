@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.css">
+   <title>Wishlist</title>
+</head>
+<body class="relative">
+   <nav class="absolute inset-x-0 shadow-lg">
+      <div class="flex items-center container mx-auto px-40 h-16">
+         <div class="mr-6 text-2xl font-bold">Bunbougu</div>
+         <div class="mr-6 text-base font-semibold">Home</div>
+         <div class="mr-6 text-base font-semibold">About</div>
+         <div class="mr-auto text-base font-semibold">Catalog</div>
+         <div class="mr-6">
+            <form class="relative focus-within:text-gray-500" action="">
+               <button class="absolute top-0 bottom-0 left-2" type="submit">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="#C4C4C4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                     <path d="M21.0004 20.9999L16.6504 16.6499" stroke="#C4C4C4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>                  
+               </button>
+               <input id="search-input" class="py-1 pl-9 border rounded-lg bg-gray-auth focus:outline-none focus:ring focus:ring-gray-300 " type="text" placeholder="Search">
+            </form>
+         </div>
+         <div class="mr-6">
+            <a href="">
+               <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0)">
+                  <path d="M8.62435 21.0832C9.15362 21.0832 9.58268 20.6541 9.58268 20.1248C9.58268 19.5956 9.15362 19.1665 8.62435 19.1665C8.09508 19.1665 7.66602 19.5956 7.66602 20.1248C7.66602 20.6541 8.09508 21.0832 8.62435 21.0832Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M19.1673 21.0832C19.6966 21.0832 20.1257 20.6541 20.1257 20.1248C20.1257 19.5956 19.6966 19.1665 19.1673 19.1665C18.638 19.1665 18.209 19.5956 18.209 20.1248C18.209 20.6541 18.638 21.0832 19.1673 21.0832Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M0.958984 0.958496H4.79232L7.36065 13.7906C7.44828 14.2318 7.68831 14.6281 8.03871 14.9102C8.38912 15.1923 8.82757 15.3421 9.27732 15.3335H18.5923C19.0421 15.3421 19.4805 15.1923 19.8309 14.9102C20.1813 14.6281 20.4213 14.2318 20.509 13.7906L22.0423 5.75016H5.75065" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0">
+                  <rect width="23" height="23" fill="white"/>
+                  </clipPath>
+                  </defs>
+               </svg>           
+            </a>
+         </div>
+         <div class="mr-6">
+            <a href="">
+               <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M18.3327 19.25V17.4167C18.3327 16.4442 17.9464 15.5116 17.2587 14.8239C16.5711 14.1363 15.6385 13.75 14.666 13.75H7.33268C6.36022 13.75 5.42759 14.1363 4.73996 14.8239C4.05232 15.5116 3.66602 16.4442 3.66602 17.4167V19.25" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M11.0007 10.0833C13.0257 10.0833 14.6673 8.44171 14.6673 6.41667C14.6673 4.39162 13.0257 2.75 11.0007 2.75C8.97561 2.75 7.33398 4.39162 7.33398 6.41667C7.33398 8.44171 8.97561 10.0833 11.0007 10.0833Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+               </svg>           
+            </a>
+         </div>
+         <div>
+            <a class="font-semibold text-lg" href="">Logout</a>
+         </div>
+      </div>
+   </nav>
+
+   <main class="flex flex-col container mx-auto px-40">
+      <div class="text-lg font-semibold mt-25">Wishlist</div>
+
+      <div class="grid gap-6 grid-cols-5 mt-5">
+         <!-- product -->
+         <div class="pb-5 overflow-hidden hover:shadow-lg ">
+            <a href="" class="inline-block h-40">
+               <img class="w-full h-full" src="img/product/604cf19282114.jpg" alt="">
+            </a>
+
+            <div class="flex items-center mt-1 px-1">
+               <div class="mr-auto">
+                  <a href="" class="">Kertas</a>
+                  <div class="">Rp.1000</div>
+               </div>
+               <div class="mr-3">
+                  <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M17.5099 2.83995L17.5103 2.8407C18.4038 4.6555 18.1246 6.8021 16.2292 9.38756L16.2273 9.39006C14.7537 11.4133 12.6291 13.4654 9.50292 15.8937C6.37464 13.4617 4.25213 11.3915 2.77568 9.38644C0.874969 6.80135 0.596103 4.65514 1.48946 2.8407L1.48983 2.83995C2.06519 1.66889 3.84948 0.55588 6.07218 1.18736C7.13006 1.49065 8.05131 2.1402 8.68664 3.02804L9.49987 4.1645L10.3131 3.02804C10.9486 2.13992 11.8702 1.49025 12.9285 1.18708L12.9311 1.18634C15.1417 0.546684 16.9328 1.66524 17.5099 2.83995Z" fill="red" stroke-width="2"/>
+                  </svg>
+               </div>
+               <div class="mr-2">
+                  <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M7.875 19.25C8.35825 19.25 8.75 18.8583 8.75 18.375C8.75 17.8918 8.35825 17.5 7.875 17.5C7.39175 17.5 7 17.8918 7 18.375C7 18.8583 7.39175 19.25 7.875 19.25Z" stroke="#2F2F2F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                     <path d="M17.5 19.25C17.9832 19.25 18.375 18.8583 18.375 18.375C18.375 17.8918 17.9832 17.5 17.5 17.5C17.0168 17.5 16.625 17.8918 16.625 18.375C16.625 18.8583 17.0168 19.25 17.5 19.25Z" stroke="#2F2F2F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                     <path d="M0.875 0.875H4.375L6.72 12.5913C6.80001 12.9941 7.01917 13.356 7.3391 13.6135C7.65903 13.8711 8.05936 14.0079 8.47 14H16.975C17.3856 14.0079 17.786 13.8711 18.1059 13.6135C18.4258 13.356 18.645 12.9941 18.725 12.5913L20.125 5.25H5.25" stroke="#2F2F2F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+               </div>
+            </div>
+         </div>
+      </div>
+   </main>
+
+   <style>
+      #login-form{
+         max-width: 1000px;
+         height: 500px;
+      }
+   </style>
+
+
+</body>
+</html>

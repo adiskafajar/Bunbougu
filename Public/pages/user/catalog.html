@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../../css/style.css">
+   <title>Catalog</title>
+</head>
+<body class="relative">
+   <nav class="absolute inset-x-0 shadow-lg">
+      <div class="flex items-center container mx-auto px-40 h-16">
+         <div class=" mr-6 text-2xl font-bold">Bunbougu</div>
+         <div class=" mr-6 text-base font-semibold">Home</div>
+         <div class=" mr-6 text-base font-semibold">About</div>
+         <div class=" mr-auto text-base font-semibold">Catalog</div>
+         <div class=" mr-6">
+            <form class="relative focus-within:text-gray-500" action="">
+               <button class="absolute top-0 bottom-0 left-2" type="submit">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="#C4C4C4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                     <path d="M21.0004 20.9999L16.6504 16.6499" stroke="#C4C4C4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>                  
+               </button>
+               <input id="search-input" class="py-1 pl-9 border rounded-lg bg-gray-auth focus:outline-none focus:ring focus:ring-gray-300 " type="text" placeholder="Search">
+            </form>
+         </div>
+         <div class="mr-6">
+            <a href="">
+               <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0)">
+                  <path d="M8.62435 21.0832C9.15362 21.0832 9.58268 20.6541 9.58268 20.1248C9.58268 19.5956 9.15362 19.1665 8.62435 19.1665C8.09508 19.1665 7.66602 19.5956 7.66602 20.1248C7.66602 20.6541 8.09508 21.0832 8.62435 21.0832Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M19.1673 21.0832C19.6966 21.0832 20.1257 20.6541 20.1257 20.1248C20.1257 19.5956 19.6966 19.1665 19.1673 19.1665C18.638 19.1665 18.209 19.5956 18.209 20.1248C18.209 20.6541 18.638 21.0832 19.1673 21.0832Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M0.958984 0.958496H4.79232L7.36065 13.7906C7.44828 14.2318 7.68831 14.6281 8.03871 14.9102C8.38912 15.1923 8.82757 15.3421 9.27732 15.3335H18.5923C19.0421 15.3421 19.4805 15.1923 19.8309 14.9102C20.1813 14.6281 20.4213 14.2318 20.509 13.7906L22.0423 5.75016H5.75065" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0">
+                  <rect width="23" height="23" fill="white"/>
+                  </clipPath>
+                  </defs>
+               </svg>           
+            </a>
+         </div>
+         <div class="mr-6">
+            <a href="">
+               <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M18.3327 19.25V17.4167C18.3327 16.4442 17.9464 15.5116 17.2587 14.8239C16.5711 14.1363 15.6385 13.75 14.666 13.75H7.33268C6.36022 13.75 5.42759 14.1363 4.73996 14.8239C4.05232 15.5116 3.66602 16.4442 3.66602 17.4167V19.25" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M11.0007 10.0833C13.0257 10.0833 14.6673 8.44171 14.6673 6.41667C14.6673 4.39162 13.0257 2.75 11.0007 2.75C8.97561 2.75 7.33398 4.39162 7.33398 6.41667C7.33398 8.44171 8.97561 10.0833 11.0007 10.0833Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+               </svg>           
+            </a>
+         </div>
+         <div>
+            <a class="font-semibold text-lg" href="">Logout</a>
+         </div>
+      </div>
+   </nav>
+
+   <main class="container mx-auto px-40 pt-25">
+      <!-- <?= View::component("navbar-product") ?> -->
+      <div>Catalog</div>
+   
+      <div class="grid gap-6 grid-cols-5 mt-13">
+         <!-- product -->
+         <?php if ($products) : ?>         
+            <?php foreach ( $products as $product ) : ?>
+               <div class="overflow-hidden">
+                  <a href="" class="block ">
+                     <!-- <img class="w-full h-full" src="<?= Image::storage("product", $product['image']) ?>" alt="<?= $product['product'] ?>"> -->
+                     <img class="w-full h-full" src="../../img/product/gabus-warna.png" alt="<?= $product['product'] ?>">
+                  </a>
+   
+                  <div class="flex items-center mt-1">   
+                     <div class="mr-auto ">
+                        <a href="" class=""><?= $product['product'] ?></a>
+                        <div class="">Rp.<?= $product['price'] ?></div>
+                     </div>
+   
+                     <!-- add & drop wishlist -->
+                     <!-- <form class="inline mr-2" action="<?= View::request("wishlist") ?>" method="post"> -->
+                     <form class="inline mr-2" action="" method="post">
+                        <input type="hidden" name="action" value='<?= in_array($product['product_id'], $loveProduct) ? "dropWishlist" : "addWishlist" ?>'>
+                        <input type="hidden" name="user" value="<?= $this->user ?>">
+                        <input type="hidden" name="view" value="<?= $this->view ?>">
+                        <input type="hidden" name="page" value="<?= $this->page ?>">
+                        <input type="hidden" name="name" value="<?= $this->name ?>">
+                        <input type="hidden" name="product" value="<?= $product['product_id'] ?>">
+                        <button type="submit" class="focus:outline-none">   
+                           <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M13.8906 1.20561L13.8932 1.20486C16.3001 0.502602 18.265 1.72707 18.905 3.04042L19.8039 2.60238L18.9053 3.04118C19.887 5.05147 19.5692 7.41737 17.5193 10.2368L17.5175 10.2393C15.9188 12.4524 13.6136 14.6936 10.2238 17.3446C6.83154 14.6894 4.52894 12.4286 2.92746 10.2357C0.871765 7.41663 0.554358 5.05111 1.53583 3.04118L1.5362 3.04042C2.17434 1.7308 4.13197 0.512748 6.55156 1.20589C7.70453 1.53917 8.71046 2.2535 9.40508 3.23225L10.2206 4.38133L11.0361 3.23225C11.7309 2.25322 12.7372 1.53876 13.8906 1.20561Z" stroke-width="2" 
+                                 <?= in_array($product['product_id'], $loveProduct) ? "fill='red' stroke='red'" : "fill='white' stroke='black'" ?> 
+                              />
+                           </svg>
+                        </button>
+                     </form>
+   
+                     <!-- add cart -->
+                     <form action="<?= View::request('cart') ?>" method="post">
+                        <input type="hidden" name="action" value="addCart">
+                        <input type="hidden" name="user" value="<?= $this->user ?>">
+                        <input type="hidden" name="product" value="<?= $product['product_id'] ?>">
+                        <button type="submit" class="focus:outline-none">               
+                           <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <g clip-path="url(#clip0)">
+                              <path d="M8.62533 21.0834C9.1546 21.0834 9.58366 20.6544 9.58366 20.1251C9.58366 19.5958 9.1546 19.1667 8.62533 19.1667C8.09605 19.1667 7.66699 19.5958 7.66699 20.1251C7.66699 20.6544 8.09605 21.0834 8.62533 21.0834Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M19.1663 21.0834C19.6956 21.0834 20.1247 20.6544 20.1247 20.1251C20.1247 19.5958 19.6956 19.1667 19.1663 19.1667C18.6371 19.1667 18.208 19.5958 18.208 20.1251C18.208 20.6544 18.6371 21.0834 19.1663 21.0834Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M0.958008 0.958252H4.79134L7.35967 13.7903C7.44731 14.2315 7.68734 14.6279 8.03774 14.91C8.38814 15.192 8.82659 15.3419 9.27634 15.3333H18.5913C19.0411 15.3419 19.4795 15.192 19.8299 14.91C20.1803 14.6279 20.4204 14.2315 20.508 13.7903L22.0413 5.74992H5.74967" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                              </g>
+                              <defs>
+                              <clipPath id="clip0">
+                              <rect width="23" height="23" fill="white"/>
+                              </clipPath>
+                              </defs>
+                           </svg>
+                        </button>
+                     </form>
+                  </div>
+               </div>      
+            <?php endforeach ;?>
+         <?php else : ?>
+            <div class="text-red-600">data empty</div>
+         <?php endif ; ?>
+      </div>
+   </main>
+   
+   <style>
+      #login-form{
+         max-width: 1000px;
+         height: 500px;
+      }
+   </style>
+
+
+</body>
+</html>

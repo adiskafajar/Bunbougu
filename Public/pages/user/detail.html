@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../../css/style.css">
+   <title>Detail Product</title>
+</head>
+<body class="relative">
+   <main class="xl:container mx-auto px-5 xl:px-40">
+      <!-- main content -->
+      <section class="grid grid-rows-2 xl:grid-rows-none xl:grid-cols-3">
+         <!-- image product -->
+         <div class=" col-span-2 xl:col-span-1 flex flex-row xl:flex-col">
+            <img class="mr-1 xl:mr-0 w-full xl:h-60" src="../../img/product/double-tape-hitam.png" alt="">
+            <div class="flex flex-col justify-between xl:flex-row xl:mt-1">
+               <img class="h-21 xl:h-16 xl:w-16" src="../../img/product/double-tape-hitam.png" alt="">
+               <img class="h-21 xl:h-16 xl:w-16" src="../../img/product/double-tape-hitam.png" alt="">
+               <img class="h-21 xl:h-16 xl:w-16" src="../../img/product/double-tape-hitam.png" alt="">
+               <img class="h-21 xl:h-16 xl:w-16" src="../../img/product/double-tape-hitam.png" alt="">
+            </div>
+         </div> 
+
+         <!-- info product -->
+         <div class="col-span-1 mt-3 xl:mt-0">
+            <div class="text-2xl font-semibold">Product</div>
+            <div class="text-sm text-gray-400">terjual: 80</div>
+            <div class="text-3xl font-semibold mt-5">Rp. 80.000</div>
+            <div class="border-t-2 border-b-2 mt-3 pl-4 py-1">Detail</div>
+            <div class="text-sm text-gray-400">Kondisi: Baru</div>
+            <div class="text-sm text-gray-400">Berat: 180gram</div>
+            <div class="text-sm text-gray-400">Kategori: Cat</div>
+            <div class="text-sm text-gray-400">Brand: Cat</div>
+            <div class="text-sm mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ad perspiciatis rerum ducimus est et dolor quidem ex, non unde voluptatum quia quis ipsum, error ut nostrum veniam molestias placeat?</div>
+         </div>
+
+         <!-- form transaction -->
+         <div class="col-span-1 mt-3 xl:mt-0">
+            <div class="p-4 border-2 rounded-lg">
+               <div class="mt-1">Atur jumlah dalam Catatan</div>
+               <div class="flex mt-2">
+                  <!-- minus button -->
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <circle cx="12" cy="12" r="12" fill="#E4E4E4"/>
+                     <path d="M14.964 11.62V13.348H7.566V11.62H14.964Z" fill="#FEFEFE" fill-opacity="0.94"/>
+                  </svg>
+
+                  <div class="w-10 border-b-2 text-center mx-1">2</div>
+                  <!-- + button -->
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <circle cx="12" cy="12" r="12" fill="#E4E4E4"/>
+                     <path d="M16.016 13.366H12.38V17.092H10.472V13.366H6.836V11.638H10.472V7.912H12.38V11.638H16.016V13.366Z" fill="#FEFEFE" fill-opacity="0.94"/>
+                  </svg>                     
+               </div>
+               <textarea class="border-2 rounded-lg mt-5 p-2 w-full" name="note" id="" rows="5" placeholder="Tuliskan sesuatu untuk penjual"></textarea>
+               <div class=" mt-4 text-gray-400 text-sm">Subtotal</div>
+               <div class="text-2xl">RP. 80.000</div>
+               <div class="flex content-center mt-4 items-center">
+                  <form class="inline-block" action="" method="post">
+                     <input type="hidden" name="action" value="">
+                     <button class="mr-3 focus:outline-none">
+                        <svg width="20" height="25" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M22.3498 3.53697L22.3502 3.53772C23.5474 6.02888 23.1365 8.93451 20.7055 12.3318L20.7037 12.3343C18.7963 15.0173 16.0449 17.7263 12.0036 20.9287C7.95843 17.7209 5.21073 14.9881 3.30048 12.3302C0.862957 8.93347 0.452519 6.02841 1.6495 3.53772L1.64986 3.53697C2.44177 1.88564 4.82748 0.405234 7.73609 1.25195C9.12468 1.65973 10.3395 2.53484 11.18 3.73816L11.9998 4.91191L12.8197 3.73816C13.6603 2.53456 14.8756 1.65933 16.2645 1.25167L16.2671 1.2509C19.162 0.392714 21.556 1.88178 22.3498 3.53697Z" stroke="#C4C4C4" stroke-width="2"/>
+                        </svg>
+                     </button>
+                  </form>
+                  <form class="block " action="" method="post">
+                     <input type="hidden" name="action" value="">
+                     <button class="flex items-center justify-center h-10 px-2 border-2 hover:border-transparent rounded-lg hover:shadow-lg text-gray-400 focus:outline-none">
+                        <svg class="mr-2" width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <g clip-path="url(#clip0)">
+                           <path d="M7.875 19.2501C8.35825 19.2501 8.75 18.8583 8.75 18.3751C8.75 17.8918 8.35825 17.5001 7.875 17.5001C7.39175 17.5001 7 17.8918 7 18.3751C7 18.8583 7.39175 19.2501 7.875 19.2501Z" stroke="#C4C4C4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                           <path d="M17.5 19.2501C17.9833 19.2501 18.375 18.8583 18.375 18.3751C18.375 17.8918 17.9833 17.5001 17.5 17.5001C17.0168 17.5001 16.625 17.8918 16.625 18.3751C16.625 18.8583 17.0168 19.2501 17.5 19.2501Z" stroke="#C4C4C4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                           <path d="M0.875 0.874939H4.375L6.72 12.5912C6.80001 12.994 7.01917 13.3559 7.3391 13.6135C7.65903 13.871 8.05936 14.0078 8.47 13.9999H16.975C17.3856 14.0078 17.786 13.871 18.1059 13.6135C18.4258 13.3559 18.645 12.994 18.725 12.5912L20.125 5.24994H5.25" stroke="#C4C4C4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                           </g>
+                           <defs>
+                           <clipPath id="clip0">
+                           <rect width="21" height="21" fill="white"/>
+                           </clipPath>
+                           </defs>
+                        </svg>
+                        <span>Tambah ke Keranjang</span>
+                     </button>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- other category -->
+      <section class="mt-20">
+         <div class="h-0.5 bg-gray-300"></div>
+         <h2 class="text-2xl font-semibold">Other Category</h2>
+         <div class="flex mt-5">
+            <div class="mr-3">
+               <img class="w-35" src="../../img/product/epson-664-tinta-printer.png" alt="">
+               <div>
+                  <div class="text-sm">product</div>
+                  <div class="text-sm">Rp.8000</div>
+               </div>
+            </div>
+            <div class="mr-3">
+               <img class="w-35" src="../../img/product/epson-664-tinta-printer.png" alt="">
+               <div>
+                  <div class="text-sm">product</div>
+                  <div class="text-sm">Rp.8000</div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- other brand -->
+      <section class="mt-10">
+         <div class="h-0.5 bg-gray-300"></div>
+         <h2 class="text-2xl font-semibold">Other Brand</h2>
+         <div class="flex mt-5">
+            <div class="mr-3">
+               <img class="w-35" src="../../img/product/epson-664-tinta-printer.png" alt="">
+               <div>
+                  <div class="text-sm">product</div>
+                  <div class="text-sm">Rp.8000</div>
+               </div>
+            </div>
+            <div class="mr-3">
+               <img class="w-35" src="../../img/product/epson-664-tinta-printer.png" alt="">
+               <div>
+                  <div class="text-sm">product</div>
+                  <div class="text-sm">Rp.8000</div>
+               </div>
+            </div>
+         </div>
+      </section>
+   </main>
+   
+   <style>
+
+   </style>
+
+            <!-- image product
+         <div class="col-span-2 xl:col-span-1 grid grid-cols-2 xl:grid-cols-none ">
+            <img class="h-full w-full" src="../../img/product/double-tape-hitam.png" alt="">
+            <div class="grid grid-rows-4 xl:grid-rows-none xl:grid-cols-4 gap-y-3 xl:gap-y-0 xl:gap-x-3 mt-3">
+               <img class="h-20 w-20" src="../../img/product/double-tape-hitam.png" alt="">
+               <img class="h-20 w-20" src="../../img/product/double-tape-hitam.png" alt="">
+               <img class="h-20 w-20" src="../../img/product/double-tape-hitam.png" alt="">
+               <img class="h-20 w-20" src="../../img/product/double-tape-hitam.png" alt="">
+            </div>
+         </div> -->
+
+</body>
+</html>

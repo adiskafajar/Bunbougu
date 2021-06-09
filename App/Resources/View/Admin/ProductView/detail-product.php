@@ -1,0 +1,8 @@
+<main class="p-10 pl-20 w-full">
+   <h1 class="mb-5 text-2xl font-bold"><?= ucfirst($this->view) ?></h1>
+
+   <div class="grid grid-cols-2 gap-x-5">  
+      <?= $this->component("product-table") ?>
+      <?= $this->component("detail-info") ?>
+   </div>
+</main> 

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.css">
+   <title>Sign In</title>
+</head>
+<body>
+   
+   <nav class="absolute inset-x-0 shadow-lg">
+      <div class="flex items-center container mx-auto px-40 h-16">
+         <div class="mr-6 text-2xl font-bold">Bunbougu</div>
+         <div class="mr-6 text-base font-semibold">Home</div>
+         <div class="mr-6 text-base font-semibold">About</div>
+         <div class="mr-auto text-base font-semibold">Catalog</div>
+         <div class="mr-6">
+            <form class="relative focus-within:text-gray-500" action="">
+               <button class="absolute top-0 bottom-0 left-2" type="submit">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="#C4C4C4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                     <path d="M21.0004 20.9999L16.6504 16.6499" stroke="#C4C4C4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>                  
+               </button>
+               <input id="search-input" class="py-1 pl-9 border rounded-lg bg-gray-auth focus:outline-none focus:ring focus:ring-gray-300 " type="text" placeholder="Search">
+            </form>
+         </div>
+         <div class="mr-6">
+            <a href="">
+               <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0)">
+                  <path d="M8.62435 21.0832C9.15362 21.0832 9.58268 20.6541 9.58268 20.1248C9.58268 19.5956 9.15362 19.1665 8.62435 19.1665C8.09508 19.1665 7.66602 19.5956 7.66602 20.1248C7.66602 20.6541 8.09508 21.0832 8.62435 21.0832Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M19.1673 21.0832C19.6966 21.0832 20.1257 20.6541 20.1257 20.1248C20.1257 19.5956 19.6966 19.1665 19.1673 19.1665C18.638 19.1665 18.209 19.5956 18.209 20.1248C18.209 20.6541 18.638 21.0832 19.1673 21.0832Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M0.958984 0.958496H4.79232L7.36065 13.7906C7.44828 14.2318 7.68831 14.6281 8.03871 14.9102C8.38912 15.1923 8.82757 15.3421 9.27732 15.3335H18.5923C19.0421 15.3421 19.4805 15.1923 19.8309 14.9102C20.1813 14.6281 20.4213 14.2318 20.509 13.7906L22.0423 5.75016H5.75065" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0">
+                  <rect width="23" height="23" fill="white"/>
+                  </clipPath>
+                  </defs>
+               </svg>           
+            </a>
+         </div>
+         <div class="mr-6">
+            <a href="">
+               <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M18.3327 19.25V17.4167C18.3327 16.4442 17.9464 15.5116 17.2587 14.8239C16.5711 14.1363 15.6385 13.75 14.666 13.75H7.33268C6.36022 13.75 5.42759 14.1363 4.73996 14.8239C4.05232 15.5116 3.66602 16.4442 3.66602 17.4167V19.25" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M11.0007 10.0833C13.0257 10.0833 14.6673 8.44171 14.6673 6.41667C14.6673 4.39162 13.0257 2.75 11.0007 2.75C8.97561 2.75 7.33398 4.39162 7.33398 6.41667C7.33398 8.44171 8.97561 10.0833 11.0007 10.0833Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+               </svg>           
+            </a>
+         </div>
+         <div>
+            <a class="font-semibold text-lg" href="">Logout</a>
+         </div>
+      </div>
+   </nav>
+
+   <main class="flex h-screen">
+      <div id="login-form" class="container flex h-79 m-auto shadow-xl">
+         <div class="flex-1">
+            <img class="h-full w-full" src="img/auth/auth-background.jpg" alt="">
+         </div>
+
+         <div class="flex flex-col flex-1 justify-center relative text-center bg-gray-auth">
+            <div class="absolute top-5 left-7 font-semibold text-xl">Sign In</div>
+
+            <form class="mx-auto" action="">
+               <div class="">
+                  <label class="block mb-2" for="username">Username</label>
+                  <input class="block w-79 h-8 pl-3 border shadow focus:outline-none focus:ring focus:ring-gray-300" type="text" autofocus>
+               </div>
+               <div class="mt-2">
+                  <label class="block mb-2" for="password">password</label>
+                  <input class="block w-79 h-8 pl-3 border shadow focus:outline-none focus:ring focus:ring-gray-300" type="text" >
+               </div>
+
+               <button class="mt-8 px-12 py-3 bg-gray-700 hover:bg-black text-white" type="submit" >Sign In</button>
+            </form>
+
+            <div class="mt-3">
+               <a class="hover:underline" href="sign-up.html">Didn't have a account? <br> Sign Up</a>
+            </div>
+         </div>
+      </div>
+   </main>
+
+   <style>
+      #login-form{
+         max-width: 1000px;
+         height: 500px;
+      }
+   </style>
+
+
+   <!-- <main class=" h-screen box-border">
+      <div class="flex w-60">
+         <div class="flex flex-1">
+            <img class="w-full h-full" src="img/auth/auth-background.jpg" alt="">
+         </div>
+   
+         <div class="flex flex-col flex-1 relative">
+            <div class="absolute top-7 left-9">
+               <h1 class="font-semibold text-4xl">Sign In</h1>
+            </div>
+   
+            <div class="my-auto text-center">
+               <form class="block" action="" method="post">
+                  <div class="">
+                     <label class="block mb-1 font-semibold text-lg" for="username">Username</label>
+                     <input class="border w-80 h-7 p-3 shadow focus:outline-none focus:ring focus:border-blue-300" type="text" name="username" autocomplete="off">
+                  </div>
+                  <div class="mt-7">
+                     <label class="block mb-1 font-semibold text-lg" for="password">Password</label>
+                     <input class="border w-80 h-7 p-3 shadow-md focus:outline-none focus:ring focus:border-blue-300" type="password" name="password" autocomplete="off">
+                  </div>
+         
+                  <div class="mt-10">
+                     <button class="px-14 py-3 bg-gray-700 hover:bg-black text-white" type="submit">Sign In</button>
+                  </div>
+               </form>
+      
+               <div class="mt-4">
+                  <a class="font-semibold hover:underline" href="sign-up.html">Dont have a account? <br> Sign Up</a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </main> -->
+</body>
+</html>

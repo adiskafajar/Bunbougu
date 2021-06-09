@@ -1,0 +1,20 @@
+{
+  "name": "Bunbougu",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tailwind:build": "npx tailwindcss-cli@latest build ./Public/css/tailwind.css -o ./Public/css/style.css",
+    "tailwind:develop": "",
+    "tailwind:production": "NODE_ENV=production npx tailwindcss-cli@latest build ./Public/css/tailwind.css -o ./Public/css/style.css"
+  },
+  "author": "adiska fajar",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.2.5",
+    "cssnano": "^4.1.11",
+    "postcss": "^8.2.15",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.1.2"
+  }
+}
